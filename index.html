@@ -36,7 +36,18 @@
 
 <section id="tecnologias">
   <h2>Tecnologias</h2>
-  <img src="img/astecnologias.png" alt="Imagem ilustrativa sobre enchentes" class="section-image">
+  
+    <div class="slides">
+    <img src="img/slide1.png" alt="Imagem 1 - Tecnologia Geral" class="slide active">
+    <img src="img/slide2.png" alt="Imagem 2 - API Meteorológica" class="slide">
+    <img src="img/slide3.png" alt="Imagem 3 - Plataforma de monitoramento" class="slide">
+  </div>
+  
+  <div class="controls">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+  </div>
+
   <p>Sensor ultrassônico IoT monitora o nível da água, enviando dados locais em tempo real.</p>
   <p>Python processa os dados e gera alertas e relatórios automáticos; APIs meteorológicas oferecem previsões.</p>
 </section>
@@ -73,16 +84,17 @@
   <footer>
     <div class="footer-content">
       <h3>Cadastre-se para receber alertas</h3>
-      <form action="#" method="post" class="cadastro-form">
-        <input type="text" name="nome" placeholder="Seu Nome">
-        <input type="email" name="email" placeholder="Seu E-mail">
-        <input type="text" name="cidade" placeholder="Sua Cidade">
-        <input type="text" name="cep" placeholder="Seu CEP">
+      <form class="cadastro-form" id="cadastroForm">
+        <input type="text" name="nome" placeholder="Seu Nome" id="nome">
+        <input type="email" name="email" placeholder="Seu E-mail" id="email">
+        <input type="text" name="cidade" placeholder="Sua Cidade" id="cidade">
+        <input type="text" name="cep" placeholder="Seu CEP" id="cep">
         <button type="submit">Cadastrar</button>
       </form>
       <p>&copy; 2025 AquaSafe. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
