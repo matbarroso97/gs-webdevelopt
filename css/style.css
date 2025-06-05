@@ -201,7 +201,7 @@ footer {
 /* Quiz */
 
 /*Botão para iniciar o quiz */
-.nav-links button {
+#start-quiz-btn  {
   background-color: transparent;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
@@ -211,10 +211,10 @@ footer {
   cursor: pointer;
   transition: all 0.3s;
   font-family: 'Poppins', sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 
-.nav-links button:hover {
+#start-quiz-btn:hover {
   background-color: var(--primary-color);
   color: #fff;
   border-color: var(--primary-color);
