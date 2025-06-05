@@ -47,6 +47,7 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin-right: 15px;
 }
 
 .nav-links a {
@@ -196,4 +197,180 @@ footer {
 
 .controls button:hover {
   background-color: var(--primary-color);
+}
+
+/* Quiz */
+
+/*Botão para iniciar o quiz */
+#start-quiz-btn  {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+#start-quiz-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+/* Seção toda do quiz */
+#quiz-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#question-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#options-container button {
+  padding: 12px;
+  border: 2px solid var(--primary-color);
+  background-color: #fff;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#options-container button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#options-container button.selected {
+  background-color: var(--primary-color);
+  color: white;
+  border: 2px solid var(--secondary-color);
+}
+
+#next-question-btn,
+#restart-quiz-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next-question-btn:hover,
+#restart-quiz-btn:hover {
+  background-color: var(--primary-color);
+}
+
+#exit-quiz-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f44336; /* Vermelho */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#exit-quiz-btn:hover {
+  background-color: #d32f2f;
+}
+
+#buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+/* menu hamburguer pra mobile */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+/* Versão Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px; /* abaixo do header */
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+ .controls {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  top: -500;
+  gap: 70px;
+  
+}
+}
+
+/* Botões de icones no menu */
+
+.color-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.color-btn:hover {
+  transform: scale(1.2);
 }
