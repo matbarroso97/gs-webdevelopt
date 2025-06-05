@@ -189,3 +189,12 @@ exitQuizBtn.addEventListener('click', () => {
   nextQuestionBtn.style.display = 'block';
   resultContainer.style.display = 'none';
 });
+
+
+// Menu Hambúrguer
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
