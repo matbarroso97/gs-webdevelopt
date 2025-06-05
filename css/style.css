@@ -1,0 +1,145 @@
+/* Variáveis de Cores */
+:root {
+  --primary-color: #5ab0cd;
+  --secondary-color: #325671;
+  --background-color: #f9f9f9;
+  --text-color: #333333;
+}
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Suavizar scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Navegação */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 80px;
+}
+
+.logo img {
+  height: 150px;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Seções */
+main {
+  padding: 60px 20px;
+}
+
+section {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fffefe;
+  border-radius: 50px;
+}
+
+.section-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-content h3 {
+  margin-bottom: 20px;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cadastro-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.cadastro-form button {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cadastro-form button:hover {
+  background-color: var(--secondary-color);
+}
