@@ -47,6 +47,7 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
+  margin-right: 15px;
 }
 
 .nav-links a {
@@ -343,4 +344,22 @@ footer {
   .hamburger {
     display: block;
   }
+}
+
+/* Botões de icones no menu */
+
+.color-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.color-btn:hover {
+  transform: scale(1.2);
 }

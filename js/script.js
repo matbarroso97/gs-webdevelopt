@@ -198,3 +198,21 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
+
+// Botões de trocar de cor do menu
+
+const color1 = document.getElementById('color1'); // Azul claro
+const color2 = document.getElementById('color2'); // Cinza azulado
+const color3 = document.getElementById('color3'); // Verde água
+
+color1.addEventListener('click', () => {
+  document.body.style.backgroundColor = '#e0f7fa'; 
+});
+
+color2.addEventListener('click', () => {
+  document.body.style.backgroundColor = '#e3f2fd'; 
+});
+
+color3.addEventListener('click', () => {
+  document.body.style.backgroundColor = '#e0f2f1'; 
+})
