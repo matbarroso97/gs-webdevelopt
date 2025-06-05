@@ -344,6 +344,17 @@ footer {
   .hamburger {
     display: block;
   }
+
+ .controls {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  top: -500;
+  gap: 70px;
+  
+}
 }
 
 /* Botões de icones no menu */
